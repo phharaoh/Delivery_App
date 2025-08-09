@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:delivery_food/core/utils/app_colors.dart';
 import 'package:delivery_food/features/home/presentation/widgets/slider.dart';
-import 'package:delivery_food/features/home/presentation/widgets/grid_view.dart';
-import 'package:delivery_food/features/home/presentation/widgets/list_view.dart';
-import 'package:delivery_food/features/home/presentation/widgets/form_feild.dart';
+import 'package:delivery_food/features/home/presentation/widgets/grid_view_builder.dart';
+import 'package:delivery_food/features/home/presentation/widgets/list_view_builder.dart';
+import 'package:delivery_food/features/home/presentation/widgets/search_form_feild.dart';
 import 'package:delivery_food/features/home/presentation/widgets/featured_items_txt.dart';
 
 class MyHomePage extends StatefulWidget {

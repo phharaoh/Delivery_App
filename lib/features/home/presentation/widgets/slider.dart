@@ -4,7 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 builderSlider() {
   return CarouselSlider(
     options: CarouselOptions(height: 180.0),
-    items: ['assets/images/homeoffer.png', 'assets/images/pro.png'].map((i) {
+    items: ['assets/images/pro.png'].map((i) {
       return Builder(
         builder: (BuildContext context) {
           return Container(

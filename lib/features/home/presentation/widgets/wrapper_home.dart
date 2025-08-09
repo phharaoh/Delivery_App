@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:delivery_food/features/home/presentation/views/home_view.dart';
-import 'package:delivery_food/features/card/presentation/views/card_view.dart';
+import 'package:delivery_food/features/card/presentation/views/card_item_view.dart';
 import 'package:delivery_food/features/profile/presentation/views/profile_view.dart';
 
 class WrapperHome extends StatefulWidget {
@@ -13,7 +13,7 @@ class WrapperHome extends StatefulWidget {
 class _WrapperHomeState extends State<WrapperHome> {
   int _currentIndex = 0;
 
-  final List<Widget> _pages = [MyHomePage(), CardView(), ProfileView()];
+  final List<Widget> _pages = [MyHomePage(), CardItemView(), ProfileView()];
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,6 @@ class _WrapperHomeState extends State<WrapperHome> {
           });
         },
         selectedItemColor: Colors.black,
-        // unselectedItemColor: Colors.redAccent,
       ),
     );
   }

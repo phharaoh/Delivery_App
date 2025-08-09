@@ -5,7 +5,7 @@ class Item {
   final String title;
   final String subtitle;
   final String image;
-  bool isAddedItem; // path to asset
+  bool isAddedItem; 
 
   Item({
     required this.title,
@@ -32,6 +32,3 @@ List<Item> generateFakeItems([int count = 100]) {
   );
 }
 
-// Example usage:
-// final items = generateFakeItems();
-// print(items.first);
