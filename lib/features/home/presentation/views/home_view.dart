@@ -19,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    viewBuilder = <Widget>[BuilderListView(), buildGridView()];
+    viewBuilder = <Widget>[ListTileView(), buildGridView()];
   }
 
   @override
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
             //! Switch Button
             _buildSwitchButton(),
             Expanded(
-              child: _selectedIndex == 0 ? BuilderListView() : buildGridView(),
+              child: _selectedIndex == 0 ? ListTileView() : buildGridView(),
             ),
           ],
         ),
