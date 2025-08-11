@@ -10,7 +10,8 @@ class CardController extends ChangeNotifier {
   }
 
   void removeFromCard(CardModel item) {
-    cardItem.remove(item);
+    cardItem.removeWhere((element) => element.id == item.id);
+    (item);
     notifyListeners();
   }
 }

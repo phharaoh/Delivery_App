@@ -5,5 +5,11 @@ class CardModel {
   final String image;
   final int quantity;
 
-  CardModel({required this.id, required this.title, required this.subtitle, required this.image, required this.quantity});
+  CardModel({
+    required this.id,
+    required this.title,
+    required this.subtitle,
+    required this.image,
+    required this.quantity,
+  });
 }
