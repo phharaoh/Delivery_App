@@ -42,8 +42,18 @@ class _ListTileViewState extends State<ListTileView> {
                 item.isAdd = !item.isAdd;
               });
 
-              if (item.isAdd) {
+              if (!item.isAdd) {
                 cardController.addToCard(
+                  CardModel(
+                    id: item.id,
+                    title: item.title,
+                    subtitle: item.subtitle,
+                    image: item.image,
+                    quantity: 1,
+                  ),
+                );
+              } else {
+                cardController.removeFromCard(
                   CardModel(
                     id: item.id,
                     title: item.title,
@@ -54,7 +64,7 @@ class _ListTileViewState extends State<ListTileView> {
                 );
               }
             },
-            child: !item.isAdd
+            child: item.isAdd
                 ? const AddToCardBtn()
                 : Text(
                     'Remove from Cart',

@@ -35,8 +35,6 @@ class CardItemView extends StatelessWidget {
               ),
             ),
 
-
-
             CustomListTile(title: 'Subtotal', trailingText: '20.00'),
             CustomListTile(title: 'Delivery Fee', trailingText: '5.00'),
             CustomListTile(title: 'Taxes', trailingText: '10.00'),

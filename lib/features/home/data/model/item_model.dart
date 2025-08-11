@@ -9,7 +9,7 @@ class Item {
     required this.title,
     required this.subtitle,
     required this.image,
-    this.isAdd = false,
+    this.isAdd = true,
   });
 }
 
