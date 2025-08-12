@@ -18,7 +18,7 @@ List<Item> foodItems = List.generate(
   (index) => Item(
     id: 'item_${index + 1}',
     title: 'Item ${index + 1}',
-    subtitle: 'This is the subtitle for item ${index + 1}',
+    subtitle: 'subtitle for item ${index + 1}',
     image: 'assets/images/pro.png',
   ),
 );

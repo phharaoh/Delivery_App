@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:delivery_food/core/utils/app_colors.dart';
+import 'package:delivery_food/features/home/presentation/widgets/wrapper_home.dart';
+import 'package:delivery_food/features/card/presentation/manager/card_controller.dart';
 
 class CustomCheckOutBtn extends StatelessWidget {
   const CustomCheckOutBtn({super.key});
@@ -14,7 +17,10 @@ class CustomCheckOutBtn extends StatelessWidget {
           backgroundColor: WidgetStatePropertyAll(AppColors.secondColor),
         ),
         onPressed: () {
-          //TODO: Implement checkout functionality
+          Provider.of<CardController>(context, listen: false).clearCard();
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => const WrapperHome()),
+          );
         },
         child: const Text(
           'Check Out',
