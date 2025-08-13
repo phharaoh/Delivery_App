@@ -4,6 +4,7 @@ class CardModel {
   final String subtitle;
   final String image;
   final int quantity;
+  final double price;
 
   CardModel({
     required this.id,
@@ -11,6 +12,7 @@ class CardModel {
     required this.subtitle,
     required this.image,
     required this.quantity,
+    required this.price,
   });
 
   CardModel copyWith({
@@ -19,6 +21,7 @@ class CardModel {
     String? subtitle,
     String? image,
     int? quantity,
+    double? price,
   }) {
     return CardModel(
       id: id ?? this.id,
@@ -26,6 +29,7 @@ class CardModel {
       subtitle: subtitle ?? this.subtitle,
       image: image ?? this.image,
       quantity: quantity ?? this.quantity,
+      price: price ?? this.price,
     );
   }
 }

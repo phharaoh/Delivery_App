@@ -18,6 +18,7 @@ class CustomCheckOutBtn extends StatelessWidget {
         ),
         onPressed: () {
           Provider.of<CardController>(context, listen: false).clearCard();
+
           Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (context) => const WrapperHome()),
           );

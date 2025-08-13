@@ -45,6 +45,7 @@ class _ListTileViewState extends State<ListTileView> {
               if (!item.isAdd) {
                 cardController.addToCard(
                   CardModel(
+                    price: item.price,
                     id: item.id,
                     title: item.title,
                     subtitle: item.subtitle,
@@ -55,6 +56,7 @@ class _ListTileViewState extends State<ListTileView> {
               } else {
                 cardController.removeFromCard(
                   CardModel(
+                    price: item.price,
                     id: item.id,
                     title: item.title,
                     subtitle: item.subtitle,

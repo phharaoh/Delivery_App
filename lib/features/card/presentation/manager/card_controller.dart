@@ -4,6 +4,15 @@ import 'package:delivery_food/features/card/data/card_model.dart';
 class CardController extends ChangeNotifier {
   List<CardModel> cardItem = [];
 
+  double _taxes = 15.0;
+  double _deliveryFee = 20.0;
+  double _subTotal = 0;
+  double _total = 0;
+
+  get total => _total;
+
+  get subTotal => _subTotal;
+
   //! add Items to Card list
   void addToCard(CardModel item) {
     cardItem.add(item);
@@ -38,5 +47,15 @@ class CardController extends ChangeNotifier {
   }
 
   //TODO : calc Sub Total
+
+  calcSubTotal(CardModel item) {
+    _subTotal = item.price * item.quantity;
+    return _subTotal;
+  }
+
   //TODO : calc  Total
+  calcTotal() {
+    _total = _subTotal + _taxes + _deliveryFee;
+    return _total;
+  }
 }
